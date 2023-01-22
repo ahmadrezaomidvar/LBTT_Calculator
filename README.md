@@ -69,7 +69,7 @@ python -m unittest discover
 
 ## Authors
 
-* **Ahmadreza Omidvar** - *Initial work* - [ahmadrezaomidvar](https://github.com/ahmadrezaomidvar)
+* **Reza Omidvar** - *Initial work* - [ahmadrezaomidvar](https://github.com/ahmadrezaomidvar)
 
 ## References
 1. 	Land and Buildings Transaction Tax - Taxes - gov.scot [Internet]. [cited 2023 Jan 19];Available from: https://www.gov.scot/policies/taxes/land-and-buildings-transaction-tax/

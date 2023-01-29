@@ -19,9 +19,10 @@ class TestLBTT(unittest.TestCase):
         price_list = [0, 1000, 140000, 145000, 200000, 250000, 300000, 325000, 500000, 750000, 900000, 20000000]
         expected_list = [0, 0, 0, 0, 1100, 2100, 4600, 5850, 23350, 48350, 66350, 2358350]
         for index, price in enumerate(price_list):
-            lbtt = self.lbtt_calculator.calculate(price)
-            expected = expected_list[index]
-            self.assertEqual(lbtt, expected)
+            with self.subTest(index=index):
+                lbtt = self.lbtt_calculator.calculate(price)
+                expected = expected_list[index]
+                self.assertEqual(lbtt, expected)
         
     def test_calculate_lbtt_negative_price(self):
         """
